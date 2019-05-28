@@ -1,0 +1,26 @@
+.header {
+    color: white;
+
+    width: 100vw;
+    min-height: 130px;
+    position: relative;
+    margin-left: -50vw;
+    padding-top: 25px;
+    left: 50%;
+    text-align: center;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+
+.section-label {
+    color: gray;
+    margin: 25px;
+    font-weight: bold;
+}
+
+#about {
+    color: black;
+    overflow: auto;
+}
