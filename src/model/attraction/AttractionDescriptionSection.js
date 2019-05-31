@@ -7,6 +7,10 @@ import "react-alice-carousel/lib/alice-carousel.css";
 
 
 export const AttractionDescriptionSection = ({description}) => {
+    if (description == undefined) {
+        return <div className={"text-center"}><b>BRAK</b></div>
+    }
+
     return (
         <div>
             <h2 className={"text-center section-label"}>{description.name}</h2>

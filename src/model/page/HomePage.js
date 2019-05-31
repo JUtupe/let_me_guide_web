@@ -31,10 +31,10 @@ export class HomePage extends Component {
                 <div className={"header future text-center align-items-center d-flex justify-content-around"}>
                     <h1>Wyszukiwarka tutaj</h1>
                 </div>
-                <main className="row d-flex justify-content-center">
 
-                <AttractionList attractions={attractions}/>
-            </main>
+                <main className="row d-flex justify-content-center">
+                    <AttractionList attractions={attractions}/>
+                </main>
             </div>
         );
     }

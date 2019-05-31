@@ -12,12 +12,8 @@ export const AttractionItem = ({attraction}) => {
     return (
         <NavLink to={"/attraction/" + attraction.id}>
             <article className={"attraction"}>
-
                 <div className={"d-flex justify-content-between"}>
-                    <div className={"headers"}>
-                        <h1 className={"nowrap"}>{attraction.descriptions[0].name}</h1>
-                        <h2 className={"nowrap"}>{attraction.location.place ? attraction.location.place : "Miejsce nie podane"}</h2>
-                    </div>
+                    {generateHeaders()}
 
                     <div className={"type d-flex align-items-center flex-column"}>
                         <img className={"type-icon"} src={typeCastle} alt={""}/>
@@ -25,24 +21,23 @@ export const AttractionItem = ({attraction}) => {
                 </div>
 
                 {generateExtras()}
-
             </article>
         </NavLink>
     );
 
-    function generateAvailableLanguages() {
-        return attraction.descriptions.map((description) => {
-                if (description.language === "POLISH") {
-                    return <img className={"toolbar-flag"} src={flagPoland} alt={"PL"} title={"PL"}/>
-                } else if (description.language === "ENGLISH") {
-                    return <img className={"toolbar-flag"} src={flagEngland} alt={"EN"} title={"EN"}/>
-                } else if (description.language === "GERMAN") {
-                    return <img className={"toolbar-flag"} src={flagGermany} alt={"DE"} title={"DE"}/>
-                } else {
-                    return <div/>
-                }
-            }
-        )
+    function generateHeaders() {
+        if (attraction.descriptions.length === 0) {
+            return <div className={"headers"}>
+                <h1 className={"nowrap"}>{attraction.location.place}</h1>
+            </div>
+
+        } else {
+            return <div className={"headers"}>
+                <h1 className={"nowrap"}>{attraction.descriptions[0].name}</h1>
+                <h2 className={"nowrap"}>{attraction.location.place}</h2>
+            </div>
+
+        }
     }
 
     function generateExtras() {
@@ -57,6 +52,25 @@ export const AttractionItem = ({attraction}) => {
                     </div>
                 </div>
             </div>
+        )
+    }
+
+    function generateAvailableLanguages() {
+        if (attraction.descriptions.length === 0) {
+            return <div>BRAK</div>
+        }
+
+        return attraction.descriptions.map((description) => {
+                if (description.language === "POLISH") {
+                    return <img className={"toolbar-flag"} src={flagPoland} alt={"PL"} title={"PL"}/>
+                } else if (description.language === "ENGLISH") {
+                    return <img className={"toolbar-flag"} src={flagEngland} alt={"EN"} title={"EN"}/>
+                } else if (description.language === "GERMAN") {
+                    return <img className={"toolbar-flag"} src={flagGermany} alt={"DE"} title={"DE"}/>
+                } else {
+                    return <div/>
+                }
+            }
         )
     }
 };
