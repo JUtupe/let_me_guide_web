@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import "./Toolbar.css";
-import logo from "../../img/logo-sygnet.svg";
+import logo from "../../img/logo.png";
 import flagPoland from "../../img/flag-poland.svg"
 import flagEngland from "../../img/flag-england.svg"
 import flagGermany from "../../img/flag-germany.svg"

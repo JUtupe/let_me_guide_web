@@ -30,7 +30,7 @@ export class AttractionPage extends Component {
     componentDidMount() {
         this.props.funCallback();
 
-        fetch("http://localhost:8080/v1/attraction/" + this.state.attraction.id)
+        fetch("http://51.75.31.22:8080/v1/attraction/" + this.state.attraction.id)
             .then(res => res.json())
             .then(json => {this.setState({attraction: new Attraction(json)})});
     };

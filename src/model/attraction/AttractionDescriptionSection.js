@@ -1,5 +1,10 @@
 import React from 'react';
 import "./AttractionDescriptionSection.css"
+import AliceCarousel from 'react-alice-carousel';
+import samplePhoto from "./../../img/ricardo.gif"
+
+import "react-alice-carousel/lib/alice-carousel.css";
+
 
 export const AttractionDescriptionSection = ({description}) => {
     return (
@@ -13,7 +18,16 @@ export const AttractionDescriptionSection = ({description}) => {
 
             <h6 className={"text-center section-label"}>GALERIA</h6>
             <section id={"about"} >
-                TODO DODODODODO
+                <AliceCarousel
+                    responsive={{1024: {items: 3}}}
+                    buttonsDisabled={true}>
+                    <img src={samplePhoto} alt={""} />
+                    <img src={samplePhoto} alt={""} />
+                    <img src={samplePhoto} alt={""} />
+                    <img src={samplePhoto} alt={""} />
+                    <img src={samplePhoto} alt={""} />
+                    <img src={samplePhoto} alt={""} />
+                </AliceCarousel>
             </section>
 
             <h6 className={"text-center section-label"}>HISTORIA</h6>

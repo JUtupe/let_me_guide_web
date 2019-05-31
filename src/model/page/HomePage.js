@@ -9,7 +9,7 @@ export class HomePage extends Component {
     };
 
     componentDidMount() {
-        fetch("http://localhost:8080/v1/attraction")
+        fetch("http://51.75.31.22:8080/v1/attraction")
             .then(res => res.json())
             .then(json => this.setState({attractions: json.map(function (data) {return new Attraction(data)})}))
             .catch(() => {});
