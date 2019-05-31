@@ -1,3 +1,16 @@
 .app {
     text-align: center;
 }
+
+#top-credits {
+    color: white;
+    margin: 15px;
+}
+
+#credits {
+    bottom: 0;
+    position: fixed;
+
+    color: white;
+    margin: 15px;
+}

@@ -24,13 +24,18 @@ class App extends Component {
                     <Drawer open={openLeft} onChange={open => this.setState({drawerOpened: open})}
                             drawerStyle={{background: "linear-gradient(260deg, #34c868, #11856e)"}}>
 
-                        Autorzy strony:
-                        <ul>
-                            <li>Wiktor Petryszyn</li>
-                            <li>Kamil Wąsowski</li>
-                            <li>Konrad Skóra</li>
-                        </ul>
+                        <div id={"top-credits"}>
+                            Aplikacja przygotowana na potrzeby II Kongresu Młodzieży Przedsiębiorczej.
+                        </div>
 
+                        <div id={"credits"}>
+                            Autorzy aplikacji:
+                            <ul>
+                                <li>Wiktor Petryszyn</li>
+                                <li>Kamil Wąsowski</li>
+                                <li>Konrad Skóra</li>
+                            </ul>
+                        </div>
                     </Drawer>
 
                     <div className={"content"}>
