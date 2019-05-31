@@ -4,7 +4,6 @@ import typeCastle from "./../../img/type-castle.svg"
 import flagPoland from "../../img/flag-poland.svg"
 import flagEngland from "../../img/flag-england.svg"
 import flagGermany from "../../img/flag-germany.svg"
-
 import "./AttractionItem.css";
 import "./../../fontello/font/meetrate-icons.ttf"
 

@@ -6,6 +6,7 @@ class Attraction {
         this.descriptions = json.descriptions;
         this.location = new Location(json.location);
         this.images = json.images;
+        this.pageUrl = json.pageUrl
     }
 }
 

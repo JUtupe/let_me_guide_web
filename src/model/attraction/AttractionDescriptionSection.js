@@ -1,13 +1,10 @@
 import React from 'react';
 import "./AttractionDescriptionSection.css"
 import AliceCarousel from 'react-alice-carousel';
-import samplePhoto from "./../../img/ricardo.gif"
-
 import "react-alice-carousel/lib/alice-carousel.css";
 
-
 export const AttractionDescriptionSection = ({description, attraction}) => {
-    if (description == undefined) {
+    if (description === undefined) {
         return <div className={"text-center"}><b>BRAK</b></div>
     }
 
@@ -19,12 +16,24 @@ export const AttractionDescriptionSection = ({description, attraction}) => {
         return <div>
             <h6 className={"text-center section-label"}>GALERIA</h6>
             <section id={"about"} >
-                {console.log("attrakcja" +description)}
                 <AliceCarousel
                     responsive={{1024: {items: 2}}}
                     buttonsDisabled={true}
                     items={attraction.images.map((image) => (<img className={"carousel-img"} src={image.imagePath} alt={""}/>))}>
                 </AliceCarousel>
+            </section>
+        </div>
+    }
+    
+    function generatePageUrl() {
+        if (attraction.pageUrl == null) {
+            return null
+        }
+
+        return <div>
+            <h6 className={"text-center section-label"}>STRONA ATRAKCJI</h6>
+            <section id={"about"} >
+                {attraction.pageUrl}
             </section>
         </div>
     }
@@ -44,6 +53,8 @@ export const AttractionDescriptionSection = ({description, attraction}) => {
             <section id={"about"} >
                 {description.history}
             </section>
+
+            {generatePageUrl()}
 
             <h6 className={"text-center section-label"}>AUTOR OPISU</h6>
             <section id={"about"} >
