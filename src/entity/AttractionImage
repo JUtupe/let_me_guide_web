@@ -1,0 +1,8 @@
+class AttractionImage {
+    constructor(json) {
+        this.id = json.id;
+        this.imagePath = json.imagePath;
+    }
+}
+
+export default AttractionImage

@@ -61,7 +61,7 @@ export class AttractionPage extends Component {
     descriptionForIndex(descriptionIndex) {
         let desc = this.state.attraction.descriptions[descriptionIndex];
 
-        return <AttractionDescriptionSection description={desc}/>
+        return <AttractionDescriptionSection description={desc} attraction={this.state.attraction}/>
     }
 
     generateAvailableLanguages() {
