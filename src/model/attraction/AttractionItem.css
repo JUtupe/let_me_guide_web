@@ -10,7 +10,8 @@ i {
     position: relative;
     border-radius: 3px;
     padding: 12px;
-    margin: 8px;
+    margin: 15px 8px;
+
     color: white;
     background: linear-gradient(260deg, #34c868, #11856e);
     box-shadow: 0 2px 32px 2px rgba(52, 200, 104, 0.4);

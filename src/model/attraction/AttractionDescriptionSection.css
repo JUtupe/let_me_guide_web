@@ -1,3 +1,23 @@
 .carousel-img {
+}
 
+#gallery {
+
+}
+
+#description {
+    text-align: justify;
+}
+
+#history {
+    text-align: justify;
+}
+
+#page-url {
+    text-align: center;
+}
+
+#author {
+    text-align: center;
+    margin-bottom: 50px;
 }

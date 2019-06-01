@@ -15,11 +15,14 @@ export const AttractionDescriptionSection = ({description, attraction}) => {
 
         return <div>
             <h6 className={"text-center section-label"}>GALERIA</h6>
-            <section id={"about"} >
+            <section id={"gallery"} >
                 <AliceCarousel
                     responsive={{1024: {items: 2}}}
                     buttonsDisabled={true}
-                    items={attraction.images.map((image) => (<img className={"carousel-img"} src={image.imagePath} alt={""}/>))}>
+                    items={attraction.images.map((image) => (<img key={image.id}
+                                                                  className={"carousel-img"}
+                                                                  src={image.imagePath}
+                                                                  alt={""}/>))}>
                 </AliceCarousel>
             </section>
         </div>
@@ -32,8 +35,8 @@ export const AttractionDescriptionSection = ({description, attraction}) => {
 
         return <div>
             <h6 className={"text-center section-label"}>STRONA ATRAKCJI</h6>
-            <section id={"about"} >
-                {attraction.pageUrl}
+            <section id={"page-url"} >
+                <a href={attraction.pageUrl} target={"_blank"}> {attraction.pageUrl}</a>
             </section>
         </div>
     }
@@ -43,21 +46,21 @@ export const AttractionDescriptionSection = ({description, attraction}) => {
             <h2 className={"text-center section-label"}>{description.name}</h2>
 
             <h6 className={"text-center section-label"}>O OBIEKCIE</h6>
-            <section id={"about"} >
+            <section id={"description"} >
                 {description.description}
             </section>
 
             {generateGallery()}
 
             <h6 className={"text-center section-label"}>HISTORIA</h6>
-            <section id={"about"} >
+            <section id={"history"} >
                 {description.history}
             </section>
 
             {generatePageUrl()}
 
             <h6 className={"text-center section-label"}>AUTOR OPISU</h6>
-            <section id={"about"} >
+            <section id={"author"} >
                 {description.author}
             </section>
         </div>
