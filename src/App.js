@@ -19,7 +19,8 @@ class App extends Component {
         return (
             <BrowserRouter>
                 <div className="container">
-                    <Toolbar ref={toolbar => {this.toolbar = toolbar}} onMenuClick={() => this.setState({drawerOpened: true})}/>
+                    <Toolbar ref={toolbar => {this.toolbar = toolbar}}
+                             onMenuClick={() => this.setState({drawerOpened: true})}/>
 
                     <Drawer open={openLeft} onChange={open => this.setState({drawerOpened: open})}
                             drawerStyle={{background: "linear-gradient(260deg, #34c868, #11856e)"}}>

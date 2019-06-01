@@ -6,6 +6,7 @@ import {AttractionList} from "../attraction/AttractionList";
 export class HomePage extends Component {
     state = {
         attractions: [],
+        query: ''
     };
 
     componentDidMount() {
@@ -15,25 +16,36 @@ export class HomePage extends Component {
             .catch(() => {});
     }
 
+    onQueryChange = () => {
+        this.setState({
+            query: this.search.value
+        })
+    };
+
+    getFilteredAttractions() {
+        let query = this.state.query;
+        return this.state.attractions.filter(
+            function (attraction) {
+                return attraction.location.place.toLowerCase()
+                    .includes(query.toLowerCase())
+            }
+        )
+    }
+
     render() {
-        const attractions = this.state.attractions;
-
-        if (attractions.length === 0) {
-            return (
-                <main className="row d-flex justify-content-center">
-                    <h1>Brak Atrakcji</h1>
-                </main>
-            );
-        }
-
         return (
             <div>
                 <div className={"header future text-center align-items-center d-flex justify-content-around"}>
-                    <h1>Wyszukiwarka tutaj</h1>
+                    <h1>
+                        <input type="text"
+                               placeholder="Szukaj..."
+                               ref={input => this.search = input}
+                               onChange={this.onQueryChange}/>
+                    </h1>
                 </div>
 
                 <main className="row d-flex justify-content-center">
-                    <AttractionList attractions={attractions}/>
+                    <AttractionList attractions={this.getFilteredAttractions()}/>
                 </main>
             </div>
         );
