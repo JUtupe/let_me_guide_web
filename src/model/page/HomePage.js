@@ -27,9 +27,17 @@ export class HomePage extends Component {
         return this.state.attractions.filter(
             function (attraction) {
                 return attraction.location.place.toLowerCase()
-                    .includes(query.toLowerCase())
+                    .includes(query.toLowerCase()) | HomePage.getFilteredAttractionByDescriptionName(attraction, query)
             }
         )
+    }
+
+    static getFilteredAttractionByDescriptionName(attraction, query) {
+        if (attraction.descriptions.length === 0) {
+            return false
+        }
+
+        return attraction.descriptions[0].name.toLowerCase().includes(query.toLowerCase());
     }
 
     render() {
