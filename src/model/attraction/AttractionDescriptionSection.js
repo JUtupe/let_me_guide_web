@@ -13,21 +13,21 @@ export const AttractionDescriptionSection = ({description, attraction}) => {
             return null
         }
 
-        return <div>
+        return <div className={""}>
             <h6 className={"text-center section-label"}>GALERIA</h6>
-            <section id={"gallery"} >
                 <AliceCarousel
-                    responsive={{1024: {items: 2}}}
+                    responsive={{1024: {items: 1}}}
                     buttonsDisabled={true}
-                    items={attraction.images.map((image) => (<img key={image.id}
-                                                                  className={"carousel-img"}
-                                                                  src={image.imagePath}
-                                                                  alt={""}/>))}>
+                    items={attraction.images.map((image) => (
+                        <img key={image.id}
+                             className={"carousel-img"}
+                             src={image.imagePath}
+                             alt={""}/>
+                             ))}>
                 </AliceCarousel>
-            </section>
         </div>
     }
-    
+
     function generatePageUrl() {
         if (attraction.pageUrl == null) {
             return null
