@@ -16,7 +16,7 @@ export const AttractionDescriptionSection = ({description, attraction}) => {
         return <div className={""}>
             <h6 className={"text-center section-label"}>GALERIA</h6>
                 <AliceCarousel
-                    responsive={{1024: {items: 1}}}
+                    responsive={{1024: {items: 2}}}
                     buttonsDisabled={true}
                     items={attraction.images.map((image) => (
                         <img key={image.id}

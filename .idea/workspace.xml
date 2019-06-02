@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3d2d690a-cb81-452b-a820-19a8a37c2ba8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/attraction/AttractionDescriptionSection.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/attraction/AttractionDescriptionSection.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/attraction/AttractionDescriptionSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/attraction/AttractionDescriptionSection.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -20,11 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/model/attraction/AttractionDescriptionSection.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="87">
-              <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+              <caret line="15" column="35" lean-forward="true" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -32,11 +31,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/attraction/AttractionDescriptionSection.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+            <state relative-caret-position="22">
+              <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -109,8 +108,8 @@
         <option value="$PROJECT_DIR$/src/model/page/HomePage.js" />
         <option value="$PROJECT_DIR$/src/model/attraction/AttractionItem.css" />
         <option value="$PROJECT_DIR$/src/model/page/AttractionPage.js" />
-        <option value="$PROJECT_DIR$/src/model/attraction/AttractionDescriptionSection.js" />
         <option value="$PROJECT_DIR$/src/model/attraction/AttractionDescriptionSection.css" />
+        <option value="$PROJECT_DIR$/src/model/attraction/AttractionDescriptionSection.js" />
       </list>
     </option>
   </component>
@@ -245,7 +244,7 @@
       <workItem from="1559321375283" duration="3671000" />
       <workItem from="1559333338195" duration="5535000" />
       <workItem from="1559381576345" duration="15522000" />
-      <workItem from="1559503126745" duration="1850000" />
+      <workItem from="1559503126745" duration="2751000" />
     </task>
     <task id="LOCAL-00001" summary=" basic mvp version without gallery and formatting">
       <created>1559075321441</created>
@@ -317,11 +316,25 @@
       <option name="project" value="LOCAL" />
       <updated>1559404238892</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="fixed image count">
+      <created>1559504992599</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1559504992599</updated>
+    </task>
+    <task id="LOCAL-00012" summary="fixed image ratio">
+      <created>1559505747684</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1559505747684</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69270000" />
+    <option name="totallyTimeSpent" value="70171000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -334,7 +347,7 @@
       <window_info anchor="bottom" id="TypeScript" weight="0.32936078" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32827735" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3261105" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3261105" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -342,7 +355,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32936078" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32936078" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -382,7 +395,9 @@
     <MESSAGE value="page url generated automatically" />
     <MESSAGE value="searching implemented" />
     <MESSAGE value="attraction description page styled" />
-    <option name="LAST_COMMIT_MESSAGE" value="attraction description page styled" />
+    <MESSAGE value="fixed image count" />
+    <MESSAGE value="fixed image ratio" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed image ratio" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/model/event/EventList.js" />
@@ -631,20 +646,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/attraction/AttractionDescriptionSection.js">
+    <entry file="file://$PROJECT_DIR$/src/model/attraction/AttractionDescriptionSection.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="22">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/attraction/AttractionDescriptionSection.css">
+    <entry file="file://$PROJECT_DIR$/src/model/attraction/AttractionDescriptionSection.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+        <state relative-caret-position="87">
+          <caret line="15" column="35" lean-forward="true" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
